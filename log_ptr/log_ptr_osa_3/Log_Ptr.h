@@ -22,7 +22,7 @@ public:
     };
 
     Log_Ptr& operator=(Log_Ptr other) {
-        this->swap(other);;
+        swap(*this, other);
         log("omistajuus kopioitu (sijoitus)");
         return *this;
 
@@ -53,6 +53,12 @@ public:
         return *ptr;
     }
 
+    friend void swap(Log_Ptr &lhs, Log_Ptr &rhs){
+        using std::swap;
+        swap(lhs.ptr, rhs.ptr);
+        swap(lhs.ref, rhs.ref);
+    }
+
 private:
     T *ptr;
     int *ref;
@@ -65,11 +71,6 @@ private:
 
     void log(const std::string &msg) const {
         std::printf("\t%li\t%-50s%p\n", get_time_stamp(), msg.c_str(), ptr);
-    }
-
-    void swap(Log_Ptr &other){
-        std::swap(this->ptr, other.ptr);
-        std::swap(this->ref, other.ref);
     }
 
 };
