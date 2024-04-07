@@ -1,0 +1,4 @@
+add_subdirectory(log_ptr_osa_1)
+add_subdirectory(log_ptr_osa_2)
+add_subdirectory(log_ptr_osa_3)
+add_subdirectory(log_ptr_osa_4)

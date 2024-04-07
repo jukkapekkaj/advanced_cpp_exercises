@@ -1,0 +1,1 @@
+add_executable(teht12 main.cpp)
