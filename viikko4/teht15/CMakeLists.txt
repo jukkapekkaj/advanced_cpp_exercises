@@ -1,0 +1,1 @@
+add_executable(teht15 main.cpp)

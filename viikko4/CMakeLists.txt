@@ -1,1 +1,6 @@
 add_subdirectory(teht12)
+add_subdirectory(teht13)
+add_subdirectory(teht14)
+add_subdirectory(teht15)
+add_subdirectory(teht16)
+add_subdirectory(teht17)

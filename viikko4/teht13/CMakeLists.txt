@@ -1,0 +1,1 @@
+add_executable(teht13 main.cpp)
