@@ -1,0 +1,19 @@
+Poikkeuksien käyttö C++ kielessä.
+
+Niin kuin usein ohjelmoinnissa, poikkeuksien käyttö tuntuu olevan kompromissi jossa täytyy punnita käyttökohdetta ja eri hyötyjä ja haittoja.
+
+Luettuani tehtävässä olleet artikkelit linkkien takana, pidin paljon ajatuksesta jossa ohjelma kaatuu heti mikäli se kohtaa ongelman, jota se ei voi korjata. Mikäli tälläine ratkaisu on mahdollista, tuntuu se erittäin
+järkevältä. Toisaalta on olemassa paljon käyttökohteita joissa tämä ei missään nimessä ole sallittua. 
+
+Poikkeuksien kaksi eniten mainittua huonoa puolta tuntuvat olevan suorituskyky ja koodin monimutkaisuus.
+Suorituskyvystä en osaa sanoa, keskustelu jakaa ihmiset kahteen ryhmään jossa osa sanoo, että suorituskyky laskee poikkeuksien takia ja toinen puolisko sanoo, että tuo on vanhentunutta tietoa eikä pidä enää paikkaansa.
+Minulla ei ole tarpeeksi kokemusta arvioida poikkeuksien aiheuttamaa suorituskyky vaikutusta. Muistan lukeneeni artikkelin jossa jopa Stroustrup "valitteli" siitä, että poikkeuksien vaikutuksesta suorituskykyyn 
+ei ole tehty tarpeeksi laadukasta ja puoleetonta tutkimusta.
+
+Koodin monimutkaisuuteen voin antaa mielipiteeni. Olen itse sitä mieltä, että poikkeukset lisäävät koodin monimutkaisuutta. Ne ovat ikäänkuin "näkymätön" ominaisuus jota ohjelmoijan täytyy jatkuvasti muistaa huomioida.
+Erityisen hankalaa tästä tulee jos rajapintoihin ei ole selvästi määritelty mitä poikkeuksia mikäkin funktio voi aiheuttaa.
+Tämä mahdollisesti aiheuttaa helposti huolimattomuus virheitä koodiin.
+
+Toisaalta mikäli funktiot palauttaisivat esimerksiki status koodeja paluuarvoina, näiden tarkastaminen joka paikassa tekee koodista myös sekavaa, virhealtista ja hankalaa lukea.
+
+Summa summarum: poikkeuksien ja yleisesti virheiden käsittely ohjelman suorituksen aikana taitaa olla yksi niitä asioita joista C++ yhteisö ei ikinä pääse yhteisymmärrykseen :).

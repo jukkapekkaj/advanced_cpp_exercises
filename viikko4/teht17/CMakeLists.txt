@@ -1,1 +1,0 @@
-add_executable(teht17 main.cpp)
