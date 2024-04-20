@@ -3,3 +3,4 @@ build/
 **/.vs/
 **/out/
 **/cmake-build-debug/
+/viikko5/NewFolder

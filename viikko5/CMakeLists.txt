@@ -1,0 +1,2 @@
+add_subdirectory(kirjastot)
+add_subdirectory(miniprojekti3)

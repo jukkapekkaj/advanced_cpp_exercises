@@ -1,0 +1,1 @@
+add_executable(straigth_t1 straight.c)
